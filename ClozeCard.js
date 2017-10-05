@@ -11,4 +11,5 @@ function ClozeQuestions() {
 
 ClozeCard.prototype = new ClozeQuestions();
 
-exports = ClozeCard;
+console.log("ClozeCard loaded");
+module.exports = ClozeCard;

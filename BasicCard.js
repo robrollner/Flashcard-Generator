@@ -1,6 +1,8 @@
 function BasicCard(front, back) {
     this.front = front;
     this.back = back;
-}
+};
 
-exports = BasicCard;
+console.log("BasicCard loaded");
+
+module.exports = BasicCard;

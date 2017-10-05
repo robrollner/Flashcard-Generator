@@ -1,0 +1,21 @@
+[{
+        "type": "BasicCard",
+        "front": "Who was the first president of the United States?",
+        "back": "George Washington"
+    },
+    {
+        "type": "ClozeCard",
+        "text": "George Washington was the first president of the United States.",
+        "cloze": "George Washington"
+    },
+    {
+        "type": "BasicCard",
+        "front": "Who was the sixteenth president of the United States?",
+        "back": "Abraham Lincoln"
+    },
+    {
+        "type": "BasicCard",
+        "front": "Who was the host of Reading Rainbow?",
+        "back": "LeVar Burton"
+    }
+]
