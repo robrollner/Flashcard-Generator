@@ -149,9 +149,9 @@ function play() {
                 console.log("Woo hoo! You're awesome!".bgCyan);
             } else {
                 if (playCard.front !== undefined) {
-                    console.log("WRONG! That is not correct!" + questAns[count].back + " is the correct answer!".bgRed.blue);
+                    console.log("WRONG! That is not correct! " + questAns[count].back.bgWhite.red + " is the correct answer!");
                 } else {
-                    console.log("WRONG! That is not correct!" + questAns[count].cloze + " is the correct answer!".bgRed.blue);
+                    console.log("WRONG! That is not correct! " + questAns[count].cloze.bgWhite.red + " is the correct answer!");
                 }
             }
 
