@@ -1,21 +1,62 @@
-[{
-        "type": "BasicCard",
-        "front": "Who was the first president of the United States?",
-        "back": "George Washington"
-    },
-    {
-        "type": "ClozeCard",
-        "text": "George Washington was the first president of the United States.",
-        "cloze": "George Washington"
-    },
-    {
-        "type": "BasicCard",
-        "front": "Who was the sixteenth president of the United States?",
-        "back": "Abraham Lincoln"
-    },
-    {
-        "type": "BasicCard",
-        "front": "Who was the host of Reading Rainbow?",
-        "back": "LeVar Burton"
-    }
+[
+  {
+    "type": "BasicCard",
+    "front": "Who was the first president of the United States?",
+    "back": "George Washington"
+  },
+  {
+    "type": "ClozeCard",
+    "text": "George Washington was the first president of the United States.",
+    "cloze": "George Washington"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who was the sixteenth president of the United States?",
+    "back": "Abraham Lincoln"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who was the host of Reading Rainbow?",
+    "back": "LeVar Burton"
+  },
+  {
+    "type": "ClozeCard",
+    "message": "Keanu Reeves is the star of the movie The Matrix.",
+    "cloze": "Keanu Reeves"
+  },
+  {
+    "type": "ClozeCard",
+    "message": "Who is the best person in the world?",
+    "cloze": "Who"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who is the best person in the world?",
+    "back": "Robbie!"
+  },
+  {
+    "type": "ClozeCard",
+    "message": "Kyle was the best at helping me.",
+    "cloze": "Kyle"
+  },
+  {
+    "type": "BasicCard",
+    "front": "",
+    "back": ""
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who is the star of the movie The Matrix?",
+    "back": "Keanu Reeves"
+  },
+  {
+    "type": "ClozeCard",
+    "message": "Robbie likes learning SQL.",
+    "cloze": "Robbie"
+  },
+  {
+    "type": "BasicCard",
+    "front": "Who is the author of Huckleberry Finn?",
+    "back": "Mark Twain"
+  }
 ]

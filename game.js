@@ -70,7 +70,12 @@ function create() {
                     back: cardInfo.back
                 };
                 questAns.push(cardObj); //need to fix.
-                fs.writeFile('flashCardLibrary.json', JSON.stringify(questAns, null, 2));
+                fs.writeFile('flashCardLibrary.json', JSON.stringify(questAns, null, 2), function(err) {
+                    if (err) {
+                        console.log(err);
+                    }
+                });
+
 
                 inquirer.prompt([{
                     type: 'confirm',
@@ -80,7 +85,8 @@ function create() {
                     if (questData.anotherQ === true) {
                         create();
                     } else {
-                        setTimeout(gameMenu, 1500);
+                        gameMenu();
+                        // setTimeout(gameMenu, 1500);
                     }
                 })
             })
@@ -100,10 +106,14 @@ function create() {
                     message: cardInfo.text,
                     cloze: cardInfo.cloze
                 };
-                if (cardObj.text.indexOf(cardObj.cloze) !== -1) {
+                if (cardInfo.text.indexOf(cardObj.cloze) !== -1) {
                     questAns.push(cardObj);
 
-                    fs.writeFile('flashCardLibrary.json', JSON.stringify(questAns, null, 2));
+                    fs.writeFile('flashCardLibrary.json', JSON.stringify(questAns, null, 2), function(err) {
+                        if (err) {
+                            console.log(err);
+                        }
+                    }); //this is the depracation error.
                 } else {
                     console.log("Enter a word from your sentence!");
                 }
@@ -115,7 +125,8 @@ function create() {
                     if (questData.anotherQ === true) {
                         create();
                     } else {
-                        setTimeout(gameMenu, 1500);
+                        gameMenu();
+                        // setTimeout(gameMenu, 1500);
                     }
                 })
             })
